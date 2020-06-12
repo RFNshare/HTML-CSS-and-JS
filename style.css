@@ -1,0 +1,16 @@
+h1 {
+text-align: center;
+color: #3F3FBF;
+}
+.top-rated {
+color: green;
+}
+.under-rated {
+color: red;
+}
+#Sant-martin {
+float: right;
+}
+.Employee {
+text-align: center;
+}
