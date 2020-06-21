@@ -1,0 +1,4 @@
+// write your code here
+var img = new SimpleImage("universe.jpg");
+print(img.getWidth(),img.getHeight());
+print(img);
