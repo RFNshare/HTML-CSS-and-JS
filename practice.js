@@ -25,6 +25,9 @@ function  doYellow() {
     ctx.fillStyle = "yellow";
     ctx.fillRect(10,10,40,40);
     ctx.fillRect(60,10,40,40);
+    ctx.fillStyle = "black";
+    ctx.font = "40px Arial"
+    ctx.fillText("Hello",10,80);
 }
 function doNone() {
     var r = document.getElementById("d1");
