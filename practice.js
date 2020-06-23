@@ -13,10 +13,22 @@ function changeNames() {
     document.getElementById('div2').innerHTML = div2;
 
 }
+var image;
 function upload() {
     var imgcan = document.getElementById('d1');
     var fileinput = document.getElementById('finput');
-    var image = new SimpleImage(fileinput);
+    image = new SimpleImage(fileinput);
+    image.drawTo(imgcan);
+}
+function doGrey() {
+    for (var pixel of image.values())
+    {
+        var avg = (pixel.getRed()+pixel.getGreen()+pixel.getBlue())/3;
+        pixel.setRed(avg);
+        pixel.setGreen(avg);
+        pixel.setBlue(avg);
+    }
+    var imgcan = document.getElementById("d1");
     image.drawTo(imgcan);
 }
 function changeColor() {
@@ -50,6 +62,4 @@ function doNone() {
     var ctx = r.getContext("2d");
     ctx.fillStyle = "white";
     ctx.fillRect(10,10,500,500);
-
-
 }
