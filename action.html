@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="practice.js"></script>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+    </script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -16,10 +18,14 @@
 <h1>Using a Canvas</h1>
 <canvas id="d1">
 
-</canvas><br>
-<button onclick="doLime()" >Make Lime</button>
-<button onclick="doYellow();" >Make yellow</button>
-<button onclick="doNone();" >Clear</button>
+</canvas>
+<br>
+<input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()">
+<button onclick="doLime()">Make Lime</button>
+<button onclick="doYellow();">Make yellow</button>
+<input type="color" id="clr" onchange="changeColor()">
+<input type="range" min="10" max="100" value="10" id="sldr" oninput="doThing()">
+<button onclick="doNone();">Clear</button>
 <!--<button onclick="changeColors();" >Change colors</button>-->
 <!--<button onclick="changeNames();" >Change Names</button>-->
 
