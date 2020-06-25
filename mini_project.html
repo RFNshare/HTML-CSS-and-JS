@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Project</title>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="mini_project.css">
+    <script src="mini_project.js"></script>
+</head>
+<body>
+<h1>Filter Fun</h1><br>
+<canvas id="d1">
+
+</canvas>
+<br>
+<h2>Load Image</h2><br>
+<input type="file" multiple="false" accept="image/*" id="imgInput" onchange="imgUpload();"><br>
+<h2>Choose Filter</h2>
+<button id="gray" value="Grayscale" onclick="doGrey();">Grayscale</button> &nbsp;
+<button id="rainbow" value="Rainbow" onclick="doRainbow();">Rainbow Filter</button> &nbsp;
+<button id="red" value="Red" onclick="doRed();">Red</button>
+<br>
+<button id="reset" value="Reset Image"  onclick="clearCanvas();">Reset Image</button>
+</body>
+</html>
